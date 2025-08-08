@@ -1,0 +1,28 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "backgound placeholder.tsx": {
+            "dynamicWrapping": true
+        }
+    },
+    "last.imagePath": "D:/Documentos/Desenhos/Clip Studio/DOJO/From Afar/From Afar Game",
+    "map.height": 34,
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.tileHeight": 192,
+    "map.tileWidth": 192,
+    "map.width": 40,
+    "openFiles": [
+    ],
+    "project": "sem título.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}
