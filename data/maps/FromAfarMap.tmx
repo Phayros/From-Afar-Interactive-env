@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-up" width="40" height="34" tilewidth="192" tileheight="192" infinite="0" nextlayerid="5" nextobjectid="11">
  <tileset firstgid="1" source="../tilesets/backgound placeholder.tsx"/>
- <layer id="1" name="Camada de Blocos 1" width="40" height="34" locked="1">
+ <layer id="1" name="Camada de Blocos 1" width="40" height="34">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -39,16 +39,16 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="ground" locked="1">
+ <objectgroup id="2" name="ground">
   <object id="10" gid="5" x="0" y="4320" width="7680" height="4320"/>
  </objectgroup>
- <objectgroup id="3" name="collisions" locked="1">
+ <objectgroup id="3" name="collisions">
   <object id="2" name="wall" type="wall" x="619.667" y="336.333" width="192" height="3624"/>
   <object id="4" name="wall" type="wall" x="6870" y="348" width="192" height="3624"/>
   <object id="5" name="wall" type="wall" x="727" y="283" width="6224" height="176"/>
   <object id="6" name="wall" type="wall" x="720" y="3856" width="6224" height="176"/>
  </objectgroup>
- <objectgroup id="4" name="Player" locked="1">
+ <objectgroup id="4" name="Player">
   <object id="8" name="Player" type="Char" x="3840" y="2160">
    <point/>
   </object>
