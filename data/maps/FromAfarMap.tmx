@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-up" width="40" height="34" tilewidth="192" tileheight="192" infinite="0" nextlayerid="5" nextobjectid="11">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-up" width="40" height="34" tilewidth="192" tileheight="192" infinite="0" nextlayerid="6" nextobjectid="12">
  <tileset firstgid="1" source="../tilesets/backgound placeholder.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="40" height="34">
   <data encoding="csv">
@@ -52,5 +52,8 @@
   <object id="8" name="Player" type="Char" x="3840" y="2160">
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="5" name="PlayerHB">
+  <object id="11" name="PlayerHB" type="hitbox" x="3820" y="2152" width="40" height="16"/>
  </objectgroup>
 </map>

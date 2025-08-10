@@ -30,9 +30,13 @@ class Game:
         for obj in map.get_layer_by_name("collisions"):
             CollisionSprite((obj.x,obj.y), pygame.Surface((obj.width, obj.height)), self.collision_sprites)
 
+        for obj in map.get_layer_by_name("PlayerHB"):
+            if obj.name == "PlayerHB":
+                PlayerHB = {"x": obj.x, "y": obj.y, "width": obj.width, "height": obj.height}
+
         for obj in map.get_layer_by_name("Player"):
             if obj.name == "Player":
-                self.player = Player((obj.x,obj.y),self.all_sprites, self.collision_sprites)
+                self.player = Player((obj.x,obj.y),PlayerHB,self.all_sprites, self.collision_sprites)
 
     def run(self):
         while(self.running):

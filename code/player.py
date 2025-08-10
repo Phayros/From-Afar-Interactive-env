@@ -1,17 +1,20 @@
 from settings import *
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, groups, collision_sprites):
+    def __init__(self, pos, hitbox, groups, collision_sprites):
         super().__init__(groups)
         self.load_images()
         self.state = "right"
         self.image = pygame.image.load(join("assets","player","sprite1","right","0.png")).convert_alpha()
-        self.rect = self.image.get_frect(center=pos)
-        self.hitbox_rect = self.rect.inflate(-30,-50)
+        self.hitbox_rect = pygame.FRect(hitbox["x"],hitbox["y"],hitbox["width"],hitbox["height"])
+        self.sprite_offset = (5,3)
+        self.rect = self.image.get_frect(midbottom=(self.hitbox_rect.midbottom[0]+self.sprite_offset[0],self.hitbox_rect.midbottom[1]+self.sprite_offset[1]))
+        
+
 
         #movement
         self.direction = pygame.Vector2(0,0)
-        self.speed = 500
+        self.speed = 1500
         self.collision_sprites = collision_sprites
     
     def load_images(self):
@@ -36,7 +39,7 @@ class Player(pygame.sprite.Sprite):
         self.collision("horizontal")
         self.hitbox_rect.y += self.direction.y * self.speed * dt
         self.collision("vertical")
-        self.rect.center = self.hitbox_rect.center
+        self.rect.midbottom = (self.hitbox_rect.midbottom[0]+self.sprite_offset[0],self.hitbox_rect.midbottom[1]+self.sprite_offset[1])
     
     def collision(self, direction):
         for sprite in self.collision_sprites:
