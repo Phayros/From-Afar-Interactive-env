@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-up" width="40" height="34" tilewidth="192" tileheight="192" infinite="0" nextlayerid="6" nextobjectid="12">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="left-up" width="40" height="34" tilewidth="192" tileheight="192" infinite="0" nextlayerid="6" nextobjectid="13">
  <tileset firstgid="1" source="../tilesets/backgound placeholder.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="40" height="34">
   <data encoding="csv">
@@ -40,7 +40,7 @@
 </data>
  </layer>
  <objectgroup id="2" name="ground">
-  <object id="10" gid="5" x="0" y="4320" width="7680" height="4320"/>
+  <object id="12" name="bg-ph" gid="6" x="0" y="4320" width="7680" height="4320"/>
  </objectgroup>
  <objectgroup id="3" name="collisions">
   <object id="2" name="wall" type="wall" x="619.667" y="336.333" width="192" height="3624"/>
