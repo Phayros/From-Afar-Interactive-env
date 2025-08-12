@@ -53,7 +53,7 @@ class Game:
 
             #draw
             self.display_surface.fill("black")
-            self.all_sprites.draw(self.player.rect.center)
+            self.all_sprites.draw((self.player.hitbox_rect.center[0],self.player.hitbox_rect.center[1]-50))
             pygame.display.update()
         
         pygame.quit()
